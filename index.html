@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK News App</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="com-logo" onclick="reload()">
+                <img src="assets\logo.webp" alt="logo" class="imgLogo"/>
+            </a>
+
+            <div class="nav-links ">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="top-headlines" onclick="onNavItemClick('top-headlines')">🟢Live News</li>
+                    <li class="hover-link nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" id='searchText' placeholder="Search here.."/>
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+        
+    </main>
+    <template id="template-news-card">
+        <div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="" alt="news" id="news-img"/>
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is title</h3>
+                    <h6 class="news-source" id="news-source">Newss</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio provident tempore qui magni repudiandae nesciunt placeat tempora nam, temporibus inventore impedit exercitationem minus quas itaque mollitia animi neque? Vel!</p>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>
